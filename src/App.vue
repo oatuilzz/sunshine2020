@@ -2,6 +2,10 @@
   <div id="app">
     <img src="./assets/logo.png">
     <div>
+      <el-row>
+
+    <el-button type="warning" icon="el-icon-star-off" circle></el-button><div>张语文的个人主页</div>
+</el-row>
       <el-button @click="startHacking">Start</el-button>
     </div>
   </div>
@@ -12,9 +16,9 @@ export default {
   methods: {
     startHacking () {
       this.$notify({
-        title: 'It works!',
+        title: '奥利给!',
         type: 'success',
-        message: 'We\'ve laid the ground work for you. It\'s time for you to build something epic!',
+        message: '点开了你就是我的人了',
         duration: 5000
       })
     }
