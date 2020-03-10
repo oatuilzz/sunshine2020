@@ -4,8 +4,8 @@
   "author": "yi.shyang@ele.me",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --env.dev",
-    "build": "rimraf dist && webpack -p --progress --hide-modules"
+    "dev": "--inline --progress --config build/webpack.dev.conf.js",
+    "build": "node build/build.js"
   },
   "dependencies": {
     "element-ui": "^2.3.4",
@@ -29,6 +29,7 @@
     "vue-loader": "^13.3.0",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.2"
+    "webpack-dev-server": "^2.4.2",
+    "shelljs": "^0.7.6"
   }
 }
